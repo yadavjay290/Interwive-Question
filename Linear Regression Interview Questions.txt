@@ -1,0 +1,223 @@
+Interview Questions on Linear Regression :-
+
+Q1) What is linear regression, and when would you use it?
+
+Ans) Linear Regression is a statistical method and supervised Machine Learning algorithm in which the model finds the best fit linear line between the independent and dependent variable 
+     which finds the linear relationship between the dependent and independent variable.
+
+When to use linear regression :-
+
+* When the data have linear or sort of linear relationship.
+* When yo have to predict numerical value which is continuous in nature. Eg:- Price of something like flight fares, product costs etc, or Calculation resale value of something like mobiles,
+cars and bikes, etc.
+
+
+
+Q2) What is residual and what is residual error? 
+
+Ans) * The distance from data point to best fit line is called residual. 
+     * The differences between the actual and predicted values of the dependent variable is called residual error.
+
+
+
+
+Q3) How to find best fit line, what is best fit line and use of best fit line?
+
+Ans) After plotting all data points, algorithm creates many straight lines in graph and find the residual of all data points then square all the residuals and add them up. From which line 
+     the sum of squared residuals should be less it will select that line as a best fit line which indicates the linear relationship between 2 variables. It also minimize the difference
+     between the actual values of the dependent variable and the predicted values from the linear regression model.
+
+
+
+Q4) What is the objective of linear regression, and how is it achieved?
+
+Ans) The objective of linear regression is to build the relationship between a dependent variable and one or more independent variables using a linear equation. This is achieved by finding
+      the best fit line that minimizes the difference between the actual values of the dependent variable and the predicted values from the linear regression model.
+
+
+
+Q5) What is the difference between simple and multiple linear regression?
+
+Ans) Simple linear regression is a regression model with only one independent variable, while multiple linear regression is a regression model with two or more independent variables.
+     Simple linear regression is used when there is a linear relationship between the dependent variable and one independent variable, while multiple linear regression is used when there is
+     a linear relationship between the dependent variable and two or more independent variables.
+
+
+
+Q6) What are the assumptions of linear regression?
+
+Ans) We can check the assumptions on trainning data. The assumptions of linear regression are:
+
+* Linearity: The relationship between the independent and dependent variable is linear.
+* Independence: The residual should be independent of each other. It means the value of one residual should not be related to the value of another residual.
+* Homoscedasticity: Homo means same and scedastasticity means spread or scatter. It means having the same scatter. It is related to residuals. When we plot your residuals it should having
+  the same spread. If the spread of residuals are not same it is called Hetroscedastasticity
+* Residual Analysis / Normality: The residual errors are normally distributed when we plot them on a graph.
+* No multicollinearity: The independent variables are not highly correlated with each other.
+
+
+
+Q7) What is Mean Squared Error(MSE) and how to find it and what is it use?
+
+Ans) MSE stands for Mean Squared Error, which measures the average squared difference between the actual and predicted values of the dependent variable in a regression model. 
+
+How to find MSE:-
+
+* Calcualted the distance between all the actual and predicted data points by using euclidean distance.
+* Square all the differences and add them up.
+* Take the Mean/Average of it. This Mean is called Mean Squared Error(MSE).
+* It is metric which use to evaluate the performance of model.
+
+
+
+Q8) What is the difference between ordinary least squares (OLS) and logistic regression? / Difference between Linear and Logistic Regression.
+
+Ans) Ordinary least squares (OLS) is a linear regression method used for numerical continuous dependent variable, while logistic regression is a regression method used for binary or 
+     categorical dependent variable.
+
+
+
+Q9) What is overfitting in linear regression?
+
+Ans) Overfitting occurs when a regression model is too complex and fits the training data too well. Linear Regression Model is very sensitive to outliers. If we don't deal with the outliers
+     before making the Linear Regression Model there's a high chance of overfitting. This can lead to poor performance of model on test or new data.
+
+
+
+Q10) What is the difference between correlation and regression?
+
+Ans) Correlation measures the strength and directional relationship between two variables, while regression build the relationship between a dependent variable and one or more 
+     independent variables. 
+
+
+
+Q11) What is multicollinearity in linear regression?
+
+Ans) Multicollinearity refers to a situation where two or more independent variables in a linear regression model are highly correlated with each other whether they are highly positive 
+     correlated or highly inverse correlated.
+
+
+
+Q12) What is the purpose of residual analysis in linear regression?
+
+Ans) Residual analysis is used to check the assumption of linear regression, specifically the assumptions of normality. We plot a graph of residuals and check whether it is
+     normally distributed or not. We can also evaluate the model by residual analysis. We make a graph of actual data points and predicted data points then analysis it to see the difference.
+
+
+
+Q13) How do you assess the goodness of fit of a linear regression model? / How to evaulate the linear regression model?
+
+Ans) We can check the goodness or evaulation of model by using various metrics such as R-squared, adjusted R-squared, Root mean square error (RMSE), Resudial analysis by ploting
+     residuals and cross-validation.
+
+
+
+Q14) Whether the feature scaling is required for linear regresion or not?
+
+Ans) Yes, feature scaling is required. We only scale the independent features not dependent feature.
+
+
+
+Q15) Advantages and Disadvantages of Linear regresion model?
+
+Ans) Advantages:-
+* Simple and easy to understand: Linear regression is a simple and easy-to-understand method for modeling the relationship between two variables.
+* Fast computation: Linear regression can be computed quickly, even for large datasets.
+* Linear regression performs exceptionally well for linearly separable data.
+
+Disadvantages :- 
+* Linear regression assumes that the relationship between the dependent and independent variables is linear, which may not always be the case.
+* Linear regression is sensitive to outliers in the data, which can have a large impact on the model's performance.
+* Linear regression cannot model nonlinear relationships between the dependent and independent variables, which may be present in some datasets.
+* Linear regression is limited to modeling relationships between continuous dependent variables and independent variables, and cannot be used for binary or categorical dependent variables 
+  without modification.
+
+
+
+Q 16) Impact of Missing Values in Linear Regression?
+
+Ans) It is sensitive to missing values which impact on the model's performance.
+
+
+
+Q17) Formul of Linear Regression?
+
+Ans) y = mx+c for simple regression and y = (M1*X1)+(M2*X2)+(m3*x3)....(Mn*Xn) + c for multiple regression
+    
+     y = dependent variable
+     m = coefficient/sclope
+     x = independent variable
+     c = intercept/constant
+
+
+Q18) what is coefficient in linear regression and what is their use?
+
+Ans)* Coefficient represents the slope of best fit line while describe the relationship between two variables X and Y where X is independent variable and y is dependent variable.
+    * Coefficient is a numerical value which used to solve the equation of linear regression and find the value of y. The equation is y = mx+c where m is coefficient or slope. 
+    * When we change the value of X the value of Y will also change. Coefficient is a numerical value which tells that by what unit the value of Y will change if we change the value of X.
+
+
+Q19) What is intercept and what is their use?
+
+Ans) If the value of x is 0 then at what point it will intercept the best fit line on y axis that point is called intercept. The value of intercept will remain same in regression only the 
+     value of coefficient will change. Intercept is also known as Constant. We need the value of intercept to find the value of y because y = mx+c where the c is intercept. 
+
+
+
+Q20) How to evaluate the performance of Model?
+
+Ans) We can evaluate the performance on Test Data.
+     * Residual plotting :- Plot the graph of actual data points againts predictive data points, visualize it and check the goddness of fit of linear regression model.
+     * Mean Squared Error(MSE) :- This measures the average squared difference between the predicted values and the actual values of dependent variable. The lower MSE value indicates the 
+       better performance of the model. The unit of MSE is not same as the unit of dependent vriable. The value of MSE is in square. To find the same unit as of dependet variable we need 
+       (RMSE).
+     * Root Mean Squared Error (RMSE) :- This is similar to MSE, but the square root of the average squared difference is taken, which gives a measure of error in the same units as the 
+       dependent variable.
+     * R-squared (R²) :- R-squared is a measure of how well the linear regression model fits the data. It ranges from 0 to 1, a higher value indicating a better fit. R-squared measures
+       the proportion of variance in the dependent variable that can be explained by the one or more independent variables. 
+     * Adjusted R-squared: This is similar to R-squared, but adjust the number of independent variables in the model and prevent the model from overfitting. It also ranges from 0-1.
+     * Mean Absolute Error (MAE) :- MAE is calculated by taking the absolute difference between the predicted and actual values of the dependent variable, summing them up, and then take 
+       the mean of these differences. This measures the absolute difference between the actual values and predicted values. The lower MAE value indicates the better performance of the 
+       model. The unit of MAE is same as unit of dependent variable.
+
+
+
+Q21) Why do need several metrics to evaluate the performance of model? Why only one metric is not enough?
+
+Ans) All metrics have their several advantages and disadvantages and all metrics not perform well on all type of data. Metrics perform different on different type of datasets. That's 
+     why we need all these metrics to evaluate the performance of model because any metric perform well on any particular type of data and another metric perform well on another type of
+     data. 
+
+
+
+Q22) Can linear regression be used for non-linear relationships between variables?
+
+Ans) * Linear regression is used to build the relationship between a dependent variable and one or more independent variables. However, it assumes a linear relationship between the 
+       dependent variable and the independent variables.
+
+     * If the relationship between the dependent variable and independent variable is non-linear, then linear regression may not be appropriate. In such cases, the regression line may not 
+       accurately capture the relationship between the variables, leading to poor predictions and model performance.
+
+
+
+Q23) What are the impact of outliers in linear regression model?
+
+Ans) Outliers in a linear regression model can have a significant impact on the model's performance and accuracy. If outliers are present in the data and used to train a linear 
+     regression model, they can pull the best fit line towards them and significantly affect the slope or intercept of the line. This can result in a biased model which perform good on 
+     trainning data but perform not so good on test and unseen data. 
+
+
+
+Q24) What are the loss functions or cost functions in Linear Regression?
+
+Ans) MAE, MSE, RMSE.
+ 
+
+
+Notes :-
+
+* R2 Score or R-Squared is also known as 'Coefficient of determination', 'goodness of fit' and 'accuracy'.
+* Best fit line is also known as 'line of best fit' and 'regression line'.
+* Before putting the data into model make sure to scale data. Scale only independent features not dependent feature.
+* Linear Regression highly effected by outliers. So, dealing with outliers is must.
+
